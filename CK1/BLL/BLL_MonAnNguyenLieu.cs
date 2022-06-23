@@ -44,7 +44,7 @@ namespace CK1.BLL
         }
         public List<MonAn_NguyenLieu> getBySearchbox(int MaMonAn,string TenNL)
         {
-            var query= from c in db.monAnNguyenLieus where c.MonAn.TenMonAn.Contains(TenNL) select c;
+            var query= from c in db.monAnNguyenLieus where c.NguyenLieu.TenNguyenLieu.Contains(TenNL) select c;
             if(MaMonAn!=0)
             {
                 query = from c in query where c.MaMonAn == MaMonAn select c;

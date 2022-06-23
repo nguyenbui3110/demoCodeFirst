@@ -87,6 +87,7 @@ namespace CK1.GUI
                         BLL_MonAnNguyenLieu.Instance.Del(i.Cells[0].Value.ToString());
                     }
                 }
+                loadDGV();
             }
         }
     }
